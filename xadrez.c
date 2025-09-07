@@ -4,6 +4,7 @@
 
 // for para torre , while bispo , do-while rainha.
 
+// Movimentar cavalo em L 2 casas para cima e  1 para a direita.
 #include <stdio.h>
 int main()
 {
@@ -38,6 +39,18 @@ int main()
     printf("******************************\n");
     printf("RAINHA PAROU NA 8° CASA\n");
     printf("******************************\n");
+
+    // Mover com (Loopaninhado) o cavalo 2 casas para cima e  1 para a direita.
+    printf("******************************\n");
+
+    for (int cima = 1; cima <= 2; cima++)
+    {
+        printf("Cavalo se moveu %d casas para cima\n", cima);
+        for (int direita = 1; direita < cima; direita++)
+        {
+            printf("Cavalo se moveu %d uma casa para a direita\n", direita);
+        }
+    }
 
     return 0;
 }
